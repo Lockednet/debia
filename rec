@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#update
+apt update -y && apt upgrade -y
+
+#baixar
+wget https://github.com/Lockednet/debia/raw/main/script.sh
+
+#permission
+chmod 777 script.sh
+
+#executar
+./script.sh
