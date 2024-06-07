@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ "$EUID" -ne 0 ]; then
+  echo "Por favor, execute como root."
+  exit 1
+fi
+
+rm -f /etc/hosts
+
+cat <<EOL > /etc/hosts
+::ffff:d10e:4618 sshplus.xyz
+::ffff:d10e:4618 https://sshplus.xyz
+209.14.70.24 https://sshplus.xyz
+209.14.70.24 sshplus.xyz
+EOL
+
+echo "SUCESSO."
