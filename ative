@@ -10,8 +10,8 @@ rm -f /etc/hosts
 cat <<EOL > /etc/hosts
 ::ffff:d10e:4618 sshplus.xyz
 ::ffff:d10e:4618 https://sshplus.xyz
-209.14.70.24 https://sshplus.xyz
-209.14.70.24 sshplus.xyz
+152.67.54.71 https://sshplus.xyz
+152.67.54.71 sshplus.xyz
 EOL
 
 echo "SUCESSO."
